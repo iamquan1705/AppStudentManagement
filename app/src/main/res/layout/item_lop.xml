@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/lop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTenLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="tên lớp"
+        android:textAllCaps="true"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvGiaoVien"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGiaoVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giao vien"
+        android:textAllCaps="true"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvTenLop"
+        app:layout_constraintVertical_bias="0.589" />
+
+<!--    <android.widget.Button-->
+<!--        android:id="@+id/btnSuaLopItem"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:background="@drawable/ic_baseline_edit"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <android.widget.Button-->
+<!--        android:id="@+id/btnXoaLopItem"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:background="@drawable/ic_baseline_delete_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

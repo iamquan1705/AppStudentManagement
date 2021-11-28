@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SinhVienActivity">
+
+    <TextView
+        android:id="@+id/tvTieuDe"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Danh sách lớp DH8c2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <android.widget.Button
+        android:id="@+id/btnThemSinhVien"
+        android:layout_width="wrap_content"
+        android:text="Thêm"
+        android:textColor="@color/white"
+        android:background="@drawable/background_button"
+        android:layout_height="wrap_content"
+        />
+    <SearchView
+        android:id="@+id/svSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <ListView
+        android:id="@+id/lvSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

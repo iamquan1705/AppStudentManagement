@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background1"
+    tools:context=".AddSvActivity">
+<LinearLayout
+    android:layout_width="400dp"
+    android:orientation="vertical"
+    android:background="@drawable/vien3"
+    android:layout_height="600dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Thêm sinh viên"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAnhTheAdd"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <android.widget.Button
+                android:id="@+id/btnCamera"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/background_button"
+                android:text="Camera"
+                android:textColor="#ffffff" />
+
+            <android.widget.Button
+                android:id="@+id/btnLibrary"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/background_button"
+                android:text="Thư viện"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã sinh viên">
+
+        <EditText
+            android:id="@+id/edtMaSVAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/vien1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên sinh viên">
+
+        <EditText
+            android:id="@+id/edtTenSVAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/vien1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập năm sinh">
+
+        <EditText
+            android:id="@+id/edtNamSinhAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/vien1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa chỉ">
+
+        <EditText
+            android:id="@+id/edtDiaChiAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/vien1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lớp : "
+            android:textSize="30dp"
+            />
+    <Spinner
+        android:id="@+id/spnTenLop"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/vien1"
+        android:layout_marginLeft="20dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <android.widget.Button
+            android:id="@+id/btnAddSinhVien"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button"
+            android:text="Thêm"
+            android:textColor="#ffffff" />
+
+        <android.widget.Button
+            android:id="@+id/btnThoatAddSv"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/background_button"
+            android:text="Thoát"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
